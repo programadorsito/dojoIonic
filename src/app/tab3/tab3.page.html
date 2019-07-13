@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      LOGIN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-col size-md="6" offset-md="3">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Fotos</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <img [src]="foto" *ngIf="foto"/>
+            <ion-button (click)="capturarFoto()">Toma foto</ion-button>
+            <ion-button (click)="buscarFoto()">Buscar foto</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-grid>
+</ion-content>
+
